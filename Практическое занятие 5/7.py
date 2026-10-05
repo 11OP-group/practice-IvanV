@@ -16,16 +16,16 @@ def calculate_fuel_cost(fuel_liters, price_per_liter):
     return fuel_liters * price_per_liter
 
 def calculate_trip_cost():
-    """Запрашивает данные, вызывает расчёты и выводит результат."""
+    """Запрашивает данные, вызывает расчёты и выводит результат"""
     print("Калькулятор стоимости бензина для поездки")
 
-    distance_km = float(input("Введите расстояние поездки (км): "))
-    consumption_per_100km = float(input("Введите расход автомобиля (л на 100 км): "))
+    distance_km = float(input("Введите расстояние поездки км: "))
+    consumption_per_100km = float(input("Введите расход автомобиля на 100км: "))
 
     fuel_liters = calculate_fuel_amount(distance_km, consumption_per_100km)
     fuel_cost = calculate_fuel_cost(fuel_liters, FUEL_PRICE_PER_LITER)
 
     print(f"Потребуется бензина: {fuel_liters:.2f} л")
-    print(f"Стоимость бензина: {fuel_cost:.2f} руб.")
+    print(f"Стоимость бензина: {fuel_cost:.2f} руб")
 
 calculate_trip_cost()
