@@ -4,11 +4,9 @@ def calculate_rectangle_area(width, height):
     """
     принимает ширину и высоту
     и возвращает площадь прямоугольника
-
     """
     area_rectangle = width * height
     return area_rectangle
-
 
 def calculate_circle_area(radius):
     """
@@ -18,7 +16,6 @@ def calculate_circle_area(radius):
     """
     circle_area = pi * radius * radius
     return circle_area
-
 
 width, height = map(float, input("Введите стороны прямоугольника: ").split())
 area_rectangle = calculate_rectangle_area(width, height)
