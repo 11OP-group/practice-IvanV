@@ -13,7 +13,7 @@ if not (
     and MIN_CELLS <= second_column <= MAX_CELLS
     and MIN_CELLS <= second_row <= MAX_CELLS
     ):
-    print("какая-то клетка выходит за пределы доски")
+    print(f"какая-то из клеток выходит за пределы {MAX_CELLS}-{MAX_CELLS} доски")
 else:
     if first_color == second_color:
         print("Цвет клеток одинаковый") ## YES

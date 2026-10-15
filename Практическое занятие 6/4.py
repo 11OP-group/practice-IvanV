@@ -14,7 +14,7 @@ if not (
     and MIN_CELLS <= second_column <= MAX_CELLS
     and MIN_CELLS <= second_row <= MAX_CELLS
     ):
-    print("фигура выходит за пределы доски")
+    print(f"какая-то из клеток выходит за пределы {MAX_CELLS}-{MAX_CELLS} доски")
 else:
     if (first_column - second_column == first_row - second_row) or (first_column - second_column == second_row - first_row):
         print("слон может так ходить") ## YES
